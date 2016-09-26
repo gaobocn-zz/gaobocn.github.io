@@ -29,7 +29,7 @@
             success: function (data) {
                 var result = JSON.parse(data);
                 //Alert the city
-                alert(result.results.address_components[3].long_name);
+                alert(data.results[0].address_components[3].long_name);
             },
             error: function () {
                 alert("code not found");
