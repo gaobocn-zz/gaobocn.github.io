@@ -8,12 +8,10 @@
 	<script>
 	 $.ajax({
          url:'https://api.spotify.com/v1/artists/43ZHCT0cAZBISjO8DG9PnE/top-tracks?country=SE',
-         dataType: 'json'}) 
+         dataType: 'json'})
          .done(function( json ) {
 	 $( "<h1>" ).text( json.tracks.album.name ).appendTo( "body" );
     	 $( "<div.content>").html( json.tracks.artists.name ).appendTo( "body" );
-	         
-	
 })
 
 
@@ -30,4 +28,3 @@
 
 </body>
 </html>
-
