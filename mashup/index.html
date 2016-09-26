@@ -23,7 +23,7 @@
         var address = document.getElementById("address").value;
         $.ajax({
             dataType: 'text',
-            url: "https://maps.googleapis.com/maps/api/geocode/json?address="+address+"&key=API_KEY",
+            url: "https://maps.googleapis.com/maps/api/geocode/json?address="+address+"&key=AIzaSyC34anXrcJKqzU7mNlqlVVkL-XN0wRHMh0",
             type: "GET",
             success: function (data) {
                 var result = JSON.parse(data);
@@ -56,7 +56,7 @@
         });
       }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC34anXrcJKqzU7mNlqlVVkL-XN0wRHMh0&callback=initMap"></script>
 
 
   </body>
