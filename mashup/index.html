@@ -20,7 +20,8 @@
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script type="text/javascript">
       function update(){
-        var address = document.getElementById("address").value;
+        // var address = document.getElementById("address").value;
+		var address = "New+York"
         $.ajax({
             dataType: 'text',
             url: "https://maps.googleapis.com/maps/api/geocode/json?address="+address+"&key=AIzaSyC34anXrcJKqzU7mNlqlVVkL-XN0wRHMh0",
@@ -45,6 +46,7 @@
       <input type="text" id="address"><br>
       <input type="button" value="Submit" onclick="update()"/>
     </form>
+
     <p id = "fullAddress"></p>
     <div id="map"></div>
     <script>
