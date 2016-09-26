@@ -4,17 +4,6 @@
     <title>Mashup</title>
   </head>
   <body>
-	  <script src="node_modules/jquery/dist/jquery.js"><script>
-  </body>
-</html>
-
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Mashup</title>
-  </head>
-  <body>
 	 <script src="node_modules/jquery/dist/jquery.js"></script>
 	<script>
 	 $.ajax({
@@ -23,8 +12,6 @@
          .done(function( json ) {
 	 $( "<h1>" ).text( json.tracks.album.name ).appendTo( "body" );
     	 $( "<div.content>").html( json.tracks.artists.name ).appendTo( "body" );
-
-
 })
 
 
