@@ -3,16 +3,16 @@
   <head>
     <title>Mashup</title>
 
-    <!--<style>
+    <<style>
       html, body {
-        height: 100%;
-        margin: 0;
+        height: 90%;
+        margin: 10;
         padding: 0;
       }
       #map {
-        height: 100%;
+        height: 80%;
       }
-    </style>-->
+    </style>
 
 <!--References used: https://developers.google.com/maps/documentation/javascript/tutorial and
         https://developers.google.com/maps/documentation/geocoding/intro -->
@@ -30,7 +30,7 @@
 				$("#resultarea").text(data);
                 var result = JSON.parse(data);
                 //Alert the city
-                alert(result.results[0].address_components[3].long_name);
+                // alert(result.results[0].address_components[3].long_name);
             },
             error: function () {
                 alert("Error");
