@@ -30,7 +30,7 @@
 				$("#resultarea").text(data);
                 var result = JSON.parse(data);
                 //Alert the city
-                alert(result.results[0].address_components[5].long_name);
+                alert(result.results[0].address_components[3].long_name);
             },
             error: function () {
                 alert("Error");
