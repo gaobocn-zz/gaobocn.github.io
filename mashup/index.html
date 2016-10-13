@@ -3,7 +3,7 @@
   <head>
     <title>Mashup</title>
 
-    <<style>
+    <style>
       html, body {
         height: 90%;
         margin: 10;
@@ -20,8 +20,7 @@
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script type="text/javascript">
       function update(){
-        var address = document.getElementById("address").value;
-		// var address = "New+York"
+        var address = document.getElementById("gaddress").value;
         $.ajax({
             dataType: 'text',
             url: "https://maps.googleapis.com/maps/api/geocode/json?address="+address+"&key=AIzaSyC34anXrcJKqzU7mNlqlVVkL-XN0wRHMh0",
@@ -29,8 +28,6 @@
             success: function (data) {
 				$("#resultarea").text(data);
                 var result = JSON.parse(data);
-                //Alert the city
-                // alert(result.results[0].address_components[3].long_name);
             },
             error: function () {
                 alert("Error");
@@ -44,11 +41,10 @@
   <body>
     <form>
       Enter Address:<br>
-      <input type="text" id="address"><br>
+      <input type="text" id="gaddress"><br>
       <input type="button" value="Submit" onclick="update()"/>
     </form>
 
-	<!-- <input type="text" name="username" id="username"> -->
 	<div id="resultarea"></div>
 
     <p id = "fullAddress"></p>
