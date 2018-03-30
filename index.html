@@ -8,9 +8,16 @@
 <a href="https://www.amazon.com/gp/goldbox?tag=quoraus-20&ascsubtag=pqr-TST-1-4-9v24XK9oQo6mZwZx&ref_=pqr_TST_1_4_9v24XK9oQo6mZwZx"> Amazon Deeplink </a>
 <a href="intent://www.quora.com/Which-Quora-employees-have-dogs#Intent;scheme=qhttp;S.browser_fallback_url=https://www.quora.com/Which-Quora-employees-have-dogs;package=com.quora.android;end"> Quora </a>
 <a href="javascript:openOrDownloadURL();"> Open App </a>
+<a href="javascript:openOrDownloadURLISO();"> Open App On iOS </a>
 <script>
 function openOrDownloadURL() {
   window.location = "intent://www.quora.com/Which-Quora-employees-have-dogs#Intent;scheme=qhttp;S.browser_fallback_url=https://www.quora.com/Which-Quora-employees-have-dogs;package=com.quora.android;end";
+};
+function openOrDownloadURLISO() {
+  window.location = "com.amazon.mobile.shopping://www.amazon.com/gp/goldbox?tag=quoraus-20&ascsubtag=pqr-TST-1-4-9v24XK9oQo6mZwZx&ref_=pqr_TST_1_4_9v24XK9oQo6mZwZx";
+  setTimeout(function() {
+    window.location = "https://www.amazon.com/gp/goldbox?tag=quoraus-20&ascsubtag=pqr-TST-1-4-9v24XK9oQo6mZwZx&ref_=pqr_TST_1_4_9v24XK9oQo6mZwZx";;
+  }, 3000);
 };
 </script>
 </body>
