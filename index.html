@@ -6,10 +6,11 @@
 <body>
 <!-- <a href="intent://www.amazon.com/gp/goldbox#Intent;scheme=amzn;package=com.amazon.mShop.android.shopping;end"> Amazon </a> -->
 <a href="intent://www.quora.com/Which-Quora-employees-have-dogs#Intent;scheme=qhttp;S.browser_fallback_url=https://www.quora.com/Which-Quora-employees-have-dogs;package=com.quora.android;end"> Quora </a>
+<a href="javascript:openOrDownloadURL();"> Open App </a>
 <script>
-setTimeout(function(){
+function openOrDownloadURL() {
   window.location = "intent://www.quora.com/Which-Quora-employees-have-dogs#Intent;scheme=qhttp;S.browser_fallback_url=https://www.quora.com/Which-Quora-employees-have-dogs;package=com.quora.android;end";
-}, 3000);
+};
 </script>
 </body>
 </html>
