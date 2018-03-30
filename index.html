@@ -5,11 +5,19 @@
 
 <body>
 <a href="intent://www.amazon.com/gp/goldbox#Intent;scheme=amzn;package=com.amazon.mShop.android.shopping;end"> Amazon </a>
+</br>
 <a href="https://www.amazon.com/gp/goldbox?tag=quoraus-20&ascsubtag=pqr-TST-1-4-9v24XK9oQo6mZwZx&ref_=pqr_TST_1_4_9v24XK9oQo6mZwZx"> Amazon Deeplink </a>
+</br>
 <a href="intent://www.quora.com/Which-Quora-employees-have-dogs#Intent;scheme=qhttp;S.browser_fallback_url=https://www.quora.com/Which-Quora-employees-have-dogs;package=com.quora.android;end"> Quora </a>
+</br>
 <a href="javascript:openOrDownloadURL();"> Open App </a>
+</br>
 <a href="javascript:openOrDownloadURLISO();"> Open App On iOS </a>
+</br>
+<a href="javascript:openOrDownloadURLISOQuora();"> Open Quora App On iOS </a>
+</br>
 <iframe id="iframe_id" width="1" height="1" style="visibility:hidden"></iframe>
+</br>
 <script>
 function openOrDownloadURL() {
   window.location = "intent://www.quora.com/Which-Quora-employees-have-dogs#Intent;scheme=qhttp;S.browser_fallback_url=https://www.quora.com/Which-Quora-employees-have-dogs;package=com.quora.android;end";
@@ -17,6 +25,13 @@ function openOrDownloadURL() {
 function openOrDownloadURLISO() {
 //   window.location = "com.amazon.mobile.shopping://www.amazon.com/gp/goldbox?tag=quoraus-20&ascsubtag=pqr-TST-1-4-9v24XK9oQo6mZwZx&ref_=pqr_TST_1_4_9v24XK9oQo6mZwZx";
   document.getElementById("iframe_id").src = "com.amazon.mobile.shopping://www.amazon.com/gp/goldbox?tag=quoraus-20&ascsubtag=pqr-TST-1-4-9v24XK9oQo6mZwZx&ref_=pqr_TST_1_4_9v24XK9oQo6mZwZx";
+  setTimeout(function() {
+    window.location = "https://www.amazon.com/gp/goldbox?tag=quoraus-20&ascsubtag=pqr-TST-1-4-9v24XK9oQo6mZwZx&ref_=pqr_TST_1_4_9v24XK9oQo6mZwZx";;
+  }, 3000);
+};
+function openOrDownloadURLISOQuora() {
+//   window.location = "com.amazon.mobile.shopping://www.amazon.com/gp/goldbox?tag=quoraus-20&ascsubtag=pqr-TST-1-4-9v24XK9oQo6mZwZx&ref_=pqr_TST_1_4_9v24XK9oQo6mZwZx";
+  document.getElementById("iframe_id").src = "quora://answer/(77955248)/0";
   setTimeout(function() {
     window.location = "https://www.amazon.com/gp/goldbox?tag=quoraus-20&ascsubtag=pqr-TST-1-4-9v24XK9oQo6mZwZx&ref_=pqr_TST_1_4_9v24XK9oQo6mZwZx";;
   }, 3000);
